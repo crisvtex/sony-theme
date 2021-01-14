@@ -1,0 +1,4 @@
+.styledLinkContent--menu-more::before {
+  background-color: red;
+  display: block;
+}

@@ -1,0 +1,309 @@
+{
+  "store.custom#landing-top": {
+    "blocks": [
+      "flex-layout.row#landing-top"
+    ]
+  },
+  "flex-layout.row#landing-top": {
+    "children": [
+      "flex-layout.col#landing-top"
+    ],
+    "props": {
+      "blockClass": "contenedor-landing",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#landing-top": {
+    "children": [
+      "flex-layout.row#landing-top-inner"
+    ],
+    "props": {
+      "preventVerticalStretch": false,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#landing-top-inner": {
+    "children": ["flex-layout.col#landing-top-inner"]
+  },
+  "flex-layout.col#landing-top-inner": {
+    "children": [
+      "rich-text#landing-top-title",
+      "flex-layout.row#landing-top-inner-col1-col1",
+      "flex-layout.row#landing-top-inner-2-cols1",
+      "flex-layout.row#landing-top-inner-3-cols1",
+      "flex-layout.row#landing-top-inner-col2-col1",
+      "flex-layout.row#landing-top-inner-2-cols2",
+      "flex-layout.row#landing-top-inner-3-cols2",
+      "flex-layout.row#landing-top-inner-col3-col1",
+      "flex-layout.row#landing-top-inner-2-cols3",
+      "flex-layout.row#landing-top-inner-3-cols3",
+      "info-card#landing-top"
+    ]
+  },
+  "rich-text#landing-top-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Ejemplo administración banners"
+    }
+  },
+  // 1-col 1
+  "flex-layout.row#landing-top-inner-col1-col1": {
+    "children": [
+      "flex-layout.col#landing-top-inner-col1-col1-col1"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-col1-col1-col1": {
+    "children": ["image#landing-top-col1-col1-col1"]
+  },
+  "image#landing-top-col1-col1-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 2-cols 1
+  "flex-layout.row#landing-top-inner-2-cols1": {
+    "children": [
+      "flex-layout.col#landing-top-inner-2-cols1-col1",
+      "flex-layout.col#landing-top-inner-2-cols1-col2"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-2-cols1-col1": {
+    "children": ["image#landing-top-2-cols1-col1"]
+  },
+  "image#landing-top-2-cols1-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-2-cols1-col2": {
+    "children": ["image#landing-top-2-cols1-col2"]
+  },
+  "image#landing-top-2-cols1-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 3-cols 1
+  "flex-layout.row#landing-top-inner-3-cols1": {
+    "children": [
+      "flex-layout.col#landing-top-inner-3-cols1-col1",
+      "flex-layout.col#landing-top-inner-3-cols1-col2",
+      "flex-layout.col#landing-top-inner-3-cols1-col3"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-3-cols1-col1": {
+    "children": ["image#landing-top-3-cols1-col1"]
+  },
+  "image#landing-top-3-cols1-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols1-col2": {
+    "children": ["image#landing-top-3-cols1-col2"]
+  },
+  "image#landing-top-3-cols1-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols1-col3": {
+    "children": ["image#landing-top-3-cols1-col3"]
+  },
+  "image#landing-top-3-cols1-col3": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 1-col 2
+  "flex-layout.row#landing-top-inner-col2-col1": {
+    "children": [
+      "flex-layout.col#landing-top-inner-col1-col1-col1"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-col2-col1-col1": {
+    "children": ["image#landing-top-1-col2-col1"]
+  },
+  "image#landing-top-1-col2-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 2-cols 2
+  "flex-layout.row#landing-top-inner-2-cols2": {
+    "children": [
+      "flex-layout.col#landing-top-inner-2-cols2-col1",
+      "flex-layout.col#landing-top-inner-2-cols2-col2"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-2-cols2-col1": {
+    "children": ["image#landing-top-2-cols2-col1"]
+  },
+  "image#landing-top-2-cols2-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-2-cols2-col2": {
+    "children": ["image#landing-top-2-cols2-col2"]
+  },
+  "image#landing-top-2-cols2-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 3-cols 2
+  "flex-layout.row#landing-top-inner-3-cols2": {
+    "children": [
+      "flex-layout.col#landing-top-inner-3-cols2-col1",
+      "flex-layout.col#landing-top-inner-3-cols2-col2",
+      "flex-layout.col#landing-top-inner-3-cols2-col3"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-3-cols2-col1": {
+    "children": ["image#landing-top-3-cols2-col1"]
+  },
+  "image#landing-top-3-cols2-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols2-col2": {
+    "children": ["image#landing-top-3-cols2-col2"]
+  },
+  "image#landing-top-3-cols2-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols2-col3": {
+    "children": ["image#landing-top-3-cols2-col3"]
+  },
+  "image#landing-top-3-cols2-col3": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 1-col 3
+  "flex-layout.row#landing-top-inner-col3-col1": {
+    "children": [
+      "flex-layout.col#landing-top-inner-col3-col1-col1"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-col3-col1-col1": {
+    "children": ["image#landing-top-col3-col1-col1"]
+  },
+  "image#landing-top-col3-col1-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 2-cols 3
+  "flex-layout.row#landing-top-inner-2-cols3": {
+    "children": [
+      "flex-layout.col#landing-top-inner-2-cols3-col1",
+      "flex-layout.col#landing-top-inner-2-cols3-col2"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-2-cols3-col1": {
+    "children": ["image#landing-top-2-cols3-col1"]
+  },
+  "image#landing-top-2-cols3-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-2-cols3-col2": {
+    "children": ["image#landing-top-2-cols3-col2"]
+  },
+  "image#landing-top-2-cols3-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  // 3-cols 3
+  "flex-layout.row#landing-top-inner-3-cols3": {
+    "children": [
+      "flex-layout.col#landing-top-inner-3-cols3-col1",
+      "flex-layout.col#landing-top-inner-3-cols3-col2",
+      "flex-layout.col#landing-top-inner-3-cols3-col3"
+    ]
+  },
+  "flex-layout.col#landing-top-inner-3-cols3-col1": {
+    "children": ["image#landing-top-3-cols3-col1"]
+  },
+  "image#landing-top-3-cols3-col1": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols3-col2": {
+    "children": ["image#landing-top-3-cols3-col2"]
+  },
+  "image#landing-top-3-cols3-col2": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "flex-layout.col#landing-top-inner-3-cols3-col3": {
+    "children": ["image#landing-top-3-cols3-col3"]
+  },
+  "image#landing-top-3-cols3-col3": {
+    "props": {
+      "src": "assets/banners/bnr-empresa.png",
+      "maxHeight": "400px",
+      "blockClass": "banner-landing-top"
+    }
+  },
+  "info-card#landing-top": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "",
+      "headline": "",
+      "subhead": "<p>Colchones Rosen S.A.I.C. es una sociedad anónima cerrada de propiedad familiar dedicada a la fabricación y comercialización de artículos y accesorios para el descanso.</p><p>Fundada en 1958 en la ciudad de Temuco - Chile, esta empresa nace como una industria de colchones en un pequeño taller. Su rápido crecimiento se produce como consecuencia de sus estrictos estándares de calidad y al alto compromiso empresarial con sus trabajadores, la región y con los clientes.</p>",
+      "callToActionText": "",
+      "callToActionUrl": "",
+      "callToActionMode": "link",
+      "blockClass": "contenido-landing-top",
+      "textAlignment": "justify",
+      "textMode": "html"
+    }
+  }
+}

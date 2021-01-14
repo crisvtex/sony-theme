@@ -1,0 +1,122 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  // Shelf Lista
+  "product-summary.shelf#lista": {
+    "children": [
+      "flex-layout.row#fila-lista"
+    ]
+  },
+
+  "flex-layout.row#fila-lista": {
+    "children": [
+      "flex-layout.col#col-lista-1",
+      "flex-layout.col#col-lista-2",
+      "flex-layout.col#col-lista-3"
+    ],
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "colGap": 3,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.col#col-lista-1": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-specification-badges"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "verticalAlign": "middle",
+      "width": "25%"
+    }
+  },
+
+  "flex-layout.col#col-lista-2": {
+    "children": [
+      "product-summary-name",
+      "product-summary-brand",
+      "product-rating-inline"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "verticalAlign": "middle",
+      "width": "50%"
+    }
+  },
+
+  "flex-layout.col#col-lista-3": {
+    "children": [
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "verticalAlign": "middle",
+      "width": "25%"
+    }
+  }
+
+}

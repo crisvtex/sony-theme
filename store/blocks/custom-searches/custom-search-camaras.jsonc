@@ -1,0 +1,81 @@
+{
+  "store.custom#search-camas": {
+    "blocks": [
+      "image#search-2",
+      "search-result-layout.customQuery#2"
+    ]
+  },
+  "image#search-2": {
+    "props": {
+
+      "src": "assets/banners/bnr-empresa.png"
+    }
+  },
+  "search-result-layout.customQuery#2": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 9,
+        "queryField": "camaras",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#search-2",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#search-2": {
+    "children": [
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#suggestion",
+      "flex-layout.row#banner-one",
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top-2",
+      "search-fetch-previous",
+      "flex-layout.row#results-2",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#top-2": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results-2": {
+    "children": [
+      "flex-layout.col#filter-search-2",
+      "flex-layout.col#search-search-2"
+    ]
+  },
+  "flex-layout.col#filter-search-2": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search-search-2": {
+    "children": [
+      "search-content#search-2"
+    ]
+  },
+  "search-content#search-2": {
+    "blocks": ["gallery#search-2", "not-found"]
+  },
+  "gallery#search-2": {
+    "blocks": ["product-summary.shelf#lista"],
+    "props": {
+      "blockClass": "fila-lista"
+    }
+  }
+}

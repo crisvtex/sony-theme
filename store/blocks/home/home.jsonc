@@ -1,0 +1,328 @@
+{
+  "store.home": {
+    "blocks": [
+      "slider-layout#home",
+      "responsive-layout.desktop#banner-bancos",
+      "responsive-layout.phone#banner-bancos",
+      "rich-text#shelf-title-mas-deseados",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-subtitle-mas-deseados",
+      "flex-layout.row#mas-deseados",
+      "rich-text#shelf-title-productos-del-mes",
+      "rich-text#shelf-subtitle-productos-del-mes",
+      "flex-layout.row#shelf-4p",
+      "rich-text#shelf-title-lo-mejor-en-camaras",
+      "rich-text#shelf-subtitle-lo-mejor-en-camaras",
+      "flex-layout.row#shelf-4p",
+      "rich-text#shelf-title-los-mas-vendidos",
+      "flex-layout.row#shelf-3p",
+      "newsletter"
+    ]
+  },
+
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "slider-home"
+    },
+    "children": [
+      /* "flex-layout.row#slide-home-1",
+      "flex-layout.row#slide-home-2" */
+      "info-card#slide-home-1",
+      "info-card#slide-home-2"
+    ]
+  },
+  "flex-layout.row#slide-home-1": {
+    "children": ["info-card#slide-home-1"]
+  },
+  "flex-layout.row#slide-home-2": {
+    "children": ["info-card#slide-home-2"]
+  },
+  "info-card#slide-home-1": {
+    "props": {
+      "id": "info-card-slide-home-1",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/bg-info-card-home-1.png",
+      "headline": "Completamente inalámbricos y con sonido perfecto",
+      "subhead": "Nuestros earbuds completamente inalámbricos te permiten disfrutar del mejor sonido con total comodidad",
+      "callToActionText": "Conoce más »",
+      "callToActionUrl": "/camaras",
+      "blockClass": "info-card-home-1",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#slide-home-2": {
+    "props": {
+      "id": "info-card-slide-home-2",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/bg-info-card-home-2.png",
+      "headline": "Este verano los precios se derriten",
+      "subhead": "Aprovecha hasta 35% en productos seleccionados.",
+      "callToActionText": "Conoce más »",
+      "callToActionUrl": "/camaras",
+      "blockClass": "info-card-home-2",
+      "textAlignment": "left"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [{
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "responsive-layout.desktop#banner-bancos": {
+    "children": ["flex-layout.row#banner-bancos-desktop"]
+  },
+  "responsive-layout.phone#banner-bancos": {
+    "children": ["flex-layout.row#banner-bancos-mobile"]
+  },
+  "flex-layout.row#banner-bancos-desktop": {
+    "children": ["image#banner-bancos-desktop"],
+    "props": {
+      "blockClass": "banner-bancos",
+      "marginTop": 5
+    }
+  },
+  "flex-layout.row#banner-bancos-mobile": {
+    "children": ["image#banner-bancos-mobile"],
+    "props": {
+      "blockClass": "banner-bancos",
+      "marginTop": 5
+    }
+  },
+  "image#banner-bancos-desktop": {
+    "props": {
+      "src": "https://store.sony.cl/arquivos/CN-CL-BuyLocal-Desktop.jpg",
+      "maxHeight": "119px"
+    }
+  },
+  "image#banner-bancos-mobile": {
+    "props": {
+      "src": "https://store.sony.cl/arquivos/CN-CL-BuyLocal-Mobile.jpg",
+      "maxHeight": "254px"
+    }
+  },
+
+  "rich-text#shelf-title-mas-deseados": {
+    "props": {
+      "text": "## Los más deseados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-subtitle-mas-deseados": {
+    "props": {
+      "text": "### Descuentos y promociones especiales",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#mas-deseados": {
+    "children": ["flex-layout.col#mas-deseados-1", "flex-layout.col#mas-deseados-2"],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 6,
+      "colSizing": "equal"
+    }
+  },
+  "flex-layout.col#mas-deseados-1": {
+    "children": [
+      "image#mas-deseados-1",
+      "info-card#mas-deseados-1"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#mas-deseados-2": {
+    "children": [
+      "image#mas-deseados-2",
+      "info-card#mas-deseados-2"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#mas-deseados-1": {
+    "props": {
+      "src": "https://store.sony.cl/arquivos/8SPAN-SRS-XB33-2020-05.jpg",
+      "maxHeight": ""
+    }
+  },
+  "image#mas-deseados-2": {
+    "props": {
+      "src": "https://store.sony.cl/arquivos/8Span-PS-LX310BT.jpg",
+      "maxHeight": ""
+    }
+  },
+  "info-card#mas-deseados-1": {
+    "props": {
+      "id": "info-card-mas-deseados-1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "",
+      "headline": "Sonido potente en cualquier lugar</br>  ",
+      "subhead": "Parlante Bluetooth, resistente al agua, al polvo y a golpes.<br>Crea el ambiente perfecto con sus luces de colores y batería de larga duración",
+      "callToActionText": "Ver más »",
+      "callToActionMode": "link",
+      "callToActionUrl": "#",
+      "blockClass": "info-card-mas-deseados",
+      "textAlignment": "center",
+      "textMode": "html"
+    }
+  },
+  "info-card#mas-deseados-2": {
+    "props": {
+      "id": "info-card-mas-deseados-2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "",
+      "headline": "Sonido de vinilo original. Ahora con libertad inalámbrica.",
+      "subhead": "Redescubre la experiencia del y calidad de sonido de los vinilos con controles sencillos y conectividad BLUETOOTH® para enlazar con tus parlantes favoritos. Con el reproductor de discos PS-LX310BT, podrás disfrutar de un sonido claro y natural.",
+      "callToActionText": "Descubre más",
+      "callToActionMode": "link",
+      "callToActionUrl": "#",
+      "blockClass": "info-card-mas-deseados",
+      "textAlignment": "center",
+      "textMode": "html"
+    }
+  },
+
+  "rich-text#shelf-title-productos-del-mes": {
+    "props": {
+      "text": "## PRODUCTOS DEL MES",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-subtitle-productos-del-mes": {
+    "props": {
+      "text": "### Disfruta los mejores descuentos que tenemos para ti",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+
+  "rich-text#shelf-title-lo-mejor-en-camaras": {
+    "props": {
+      "text": "## LO MEJOR EN CÁMARAS",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-subtitle-lo-mejor-en-camaras": {
+    "props": {
+      "text": "### Obtén la mejor toma con calidad de imagen excepcional y calidad profesional",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "rich-text#shelf-title-los-mas-vendidos": {
+    "props": {
+      "text": "## LOS MÁS VENDIDOS DE SONY STORE",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf-3p": {
+    "children": ["list-context.product-list#demo-3p"]
+  },
+  "flex-layout.row#shelf-4p": {
+    "children": ["list-context.product-list#demo-4p"]
+  },
+
+
+  "list-context.product-list#demo-3p": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-3p"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-3p": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "list-context.product-list#demo-4p": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-4p"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-4p": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      /* "menu-item#category-apparel",
+      "menu-item#category-home", */
+      "menu-item#promociones",
+      "menu-item#camaras",
+      "menu-item#videocamaras",
+      "menu-item#tv-y-teatro-en-casa",
+      "menu-item#audio",
+      "menu-item#playstation",
+      "menu-item#audio-para-auto",
+      "menu-item#energia-y-almacenamiento"
+
+    ]
+  },
+  "menu-item#category-apparel": {
+    "props": {
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/",
+        "noFollow": false,
+        "tagTitle": "Apparel & Accessories",
+        "text": "Apparel & Accessories"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-apparel"]
+  },
+  "vtex.menu@2.x:submenu#category-apparel": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-apparel"]
+  },
+  "vtex.menu@2.x:menu#category-apparel": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-apparel-clothing",
+      "menu-item#category-apparel-accessories",
+      "menu-item#category-apparel-eyeglasses"
+    ]
+  },
+  "menu-item#category-apparel-clothing": {
+    "props": {
+      "id": "menu-item-category-apparel-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+  "menu-item#category-apparel-accessories": {
+    "props": {
+      "id": "menu-item-category-apparel-accessories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/accessories/",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu-item#category-apparel-eyeglasses": {
+    "props": {
+      "id": "menu-item-category-apparel-eyeglasses",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/eyeglasses/",
+        "noFollow": false,
+        "tagTitle": "Eyeglasses",
+        "text": "Eyeglasses"
+      }
+    }
+  },
+  "menu-item#category-home": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/camaras",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "Home & Decor"
+      }
+    }
+  },
+
+  "menu-item#promociones": {
+    "props": {
+      "id": "menu-item-promociones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/promociones",
+        "noFollow": true,
+        "tagTitle": "Promociones",
+        "text": "Promociones"
+      },
+      "blockClass": "menu-cat-promociones"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#camaras": {
+    "props": {
+      "id": "menu-item-camaras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/camaras",
+        "noFollow": true,
+        "tagTitle": "Cámaras",
+        "text": "Cámaras"
+      },
+      "blockClass": "menu-cat-camaras"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#videocamaras": {
+    "props": {
+      "id": "menu-item-videocamaras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/videocamaras",
+        "noFollow": true,
+        "tagTitle": "Videocámaras",
+        "text": "Videocámaras"
+      },
+      "blockClass": "menu-cat-videocamaras"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#tv-y-teatro-en-casa": {
+    "props": {
+      "id": "menu-item-tv-y-teatro-en-casa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tv-y-teatro-en-casa",
+        "noFollow": true,
+        "tagTitle": "TV y Teatro en Casa",
+        "text": "TV y Teatro en Casa"
+      },
+      "blockClass": "menu-cat-tv-y-teatro-en-casa"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#audio": {
+    "props": {
+      "id": "menu-item-audio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio",
+        "noFollow": true,
+        "tagTitle": "Audio",
+        "text": "Audio"
+      },
+      "blockClass": "menu-cat-audio"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#playstation": {
+    "props": {
+      "id": "menu-item-playstation",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/playstation",
+        "noFollow": true,
+        "tagTitle": "Playstation",
+        "text": "Playstation"
+      },
+      "blockClass": "menu-cat-playstation"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#audio-para-auto": {
+    "props": {
+      "id": "menu-item-audio-para-auto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/audio-para-auto",
+        "noFollow": true,
+        "tagTitle": "Audio para Auto",
+        "text": "Audio para Auto"
+      },
+      "blockClass": "menu-cat-audio-para-auto"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "menu-item#energia-y-almacenamiento": {
+    "props": {
+      "id": "menu-item-energia-y-almacenamiento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/energia-y-almacenamiento",
+        "noFollow": true,
+        "tagTitle": "Energía y Almacenamiento",
+        "text": "Energía y Almacenamiento"
+      },
+      "blockClass": "menu-cat-energia-y-almacenamiento"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+
+  "vtex.menu@2.x:submenu#more": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-more"]
+  },
+  "flex-layout.row#menu-more": {
+    "children": ["flex-layout.col#menu-more-1", "flex-layout.col#menu-more-2"]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": ["vtex.menu@2.x:menu#more"]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": ["info-card#home"]
+  },
+  "vtex.menu@2.x:menu#more": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#about-us", "menu-item#faq"]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  }
+}

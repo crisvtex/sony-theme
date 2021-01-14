@@ -1,0 +1,10 @@
+.buttonText,
+.buttonText--btn-add-to-cart {
+  text-transform: capitalize;
+}
+
+
+.buttonText :global(.vtex-button),
+.buttonText--btn-add-to-cart :global(.vtex-button) {
+  border-radius: 2px !important;
+}

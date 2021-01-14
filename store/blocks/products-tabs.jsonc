@@ -1,0 +1,107 @@
+{
+  "tab-layout#product": {
+      "children": [
+        "tab-list#product",
+        "tab-content#product"
+      ],
+      "props": {
+        "blockClass": "home"
+      }
+  },
+  "tab-list#product": {
+      "children": [
+        "tab-list.item#product1",
+        "tab-list.item#product3",
+        "tab-list.item#product2"
+        ]
+  },
+  "tab-list.item#product1": {
+      "props": {
+        "tabId": "product1",
+        "label": "MÁS VISTOS",
+        "defaultActiveTab": true
+      }
+  },
+  "tab-list.item#product2": {
+      "props": {
+        "tabId": "product2",
+        "label": "MÁS COMPRADOS"
+      }
+  },
+  "tab-list.item#product3": {
+      "props": {
+        "tabId": "product3",
+        "label": "VISTOS Y COMPRADOS"
+      }
+  },    
+  "tab-content#product": {
+      "children": [
+        "tab-content.item#product1",
+        "tab-content.item#product2",
+        "tab-content.item#product3"
+      ]
+  },
+  "tab-content.item#product1": {
+      "children": [
+        "shelf.relatedProducts#view"
+      ],
+      "props": {
+        "tabId": "product1"
+      }
+  },
+  "tab-content.item#product2": {
+      "children": [
+        "shelf.relatedProducts#buy"
+      ],
+      "props": {
+        "tabId": "product2"
+      }
+  },
+  "tab-content.item#product3": {
+      "children": [
+        "shelf.relatedProducts#view-and-bought"
+      ],
+      "props": {
+        "tabId": "product3"
+      }
+  },
+  "shelf.relatedProducts#view": {
+      "blocks": [
+          "product-summary.shelf"
+      ],
+      "props": {
+          "recommendation": "view",
+          "productList": {
+              "titleText": "Los clientes que vieron este producto también vieron",
+              "showTitle": true,
+              "minItemsPerPage": 2
+          }
+      }
+  },
+  "shelf.relatedProducts#buy": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "props": {
+        "recommendation": "buy",
+        "productList": {
+            "titleText": "Los clientes también compraron",
+            "showTitle": true,
+            "minItemsPerPage": 2
+        }
+    }
+  },
+  "shelf.relatedProducts#view-and-bought": {
+    "blocks": [
+        "product-summary.shelf"
+    ],
+    "props": {
+        "recommendation": "viewAndBought",
+        "productList": {
+            "titleText": "Los clientes que vieron este producto también compraron",
+            "showTitle": true,
+            "minItemsPerPage": 2
+        }
+    }
+  }
+}

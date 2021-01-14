@@ -1,0 +1,78 @@
+{
+  "store.custom#search-living": {
+    "blocks": [
+      "image#search",
+      "search-result-layout.customQuery#1"
+    ]
+  },
+  "image#search": {
+    "props": {
+
+      "src": "assets/banners/bnr-empresa.png"
+    }
+  },
+  "search-result-layout.customQuery#1": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 9,
+        "queryField": "playstation",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#search",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#search": {
+    "children": [
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#suggestion",
+      "flex-layout.row#banner-one",
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter-search",
+      "flex-layout.col#search-search"
+    ]
+  },
+  "flex-layout.col#filter-search": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search-search": {
+    "children": [
+      "search-content#search"
+    ]
+  },
+  "search-content#search": {
+    "blocks": ["gallery#search", "not-found"]
+  },
+  "gallery#search": {
+    "blocks": ["product-summary.shelf"]
+  }
+}
